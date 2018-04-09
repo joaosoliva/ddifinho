@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class LoadingScreenManager : MonoBehaviour {
 
 	[Header("Loading Visuals")]
-	public Text loadingText;
+	public TextMeshProUGUI loadingText;
 	public Image progressBar, txt_background;
 	public Image fadeOverlay;
     public Sprite[] images;
@@ -110,13 +111,13 @@ public class LoadingScreenManager : MonoBehaviour {
 	void ShowLoadingVisuals() {
 
 		progressBar.fillAmount = 0f;
-		loadingText.text = "CARREGANDO";
+		loadingText.text = "Carregando...";
 	}
 
 	void ShowCompletionVisuals() {
 
 		progressBar.fillAmount = 1f;
-		loadingText.text = "CARREGAMENTO COMPLETO";
+		loadingText.text = "100% completo!";
 	}
 
 }
