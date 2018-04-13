@@ -29,6 +29,8 @@ public class Map : MonoBehaviour {
     [Space]
     [SerializeField]
     Sprite FullStar;
+    [SerializeField]
+    Sprite EmptyStar;
 
     bool animate = false;
 
@@ -54,17 +56,22 @@ public class Map : MonoBehaviour {
 		
 	}
 
-    void LoadScore()
+    public void LoadScore()
     {
         for (int i = 0; i < scoreMinigame.Length; i++)
         {
-            //  if (PlayerPrefs.GetInt("Score_Minigame" + i + "_" + PlayerPrefs.GetString("Dificuldade")) >= 1)
-            //  {
-            for (int c = 0; c < PlayerPrefs.GetInt("Score_Minigame_" + i + "_" + PlayerPrefs.GetString("Dificuldade")); c++)
+            for (int c = 0; c < 3; c++)
+            {
+                scoreMinigame[i].transform.GetChild(c).GetComponent<Image>().sprite = EmptyStar;
+            }
+        }
+
+        for (int i = 0; i < scoreMinigame.Length; i++)
+        {
+            for (int c = 0; c < PlayerPrefs.GetInt("Score_Minigame_" + (i+1) + "_" + PlayerPrefs.GetString("Dificuldade")); c++)
             {
                 scoreMinigame[i].transform.GetChild(c).GetComponent<Image>().sprite = FullStar;
             }
-            // }
         }
     }
 
