@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Portugues>
+  <Language>
+    <FrasePrincipal>Escolha o idioma</FrasePrincipal>
+  </Language>
+  
+  <MainScreen>
+    <FrasePrincipal>Pressione para jogar</FrasePrincipal>
+  </MainScreen>
+  
+  <Menu>
+    <Continuar>Continuar</Continuar>
+    <Novo>Novo Jogo</Novo>
+    <Opcoes>Opções</Opcoes>
+    <Sair>Sair</Sair>
+  </Menu>
+  
+  <Permission>
+    <Pergunta>permite que os dados do jogo sejam recolhidos para pesquisa?</Pergunta>
+    <Sim>Sim</Sim>
+    <Nao>Não</Nao>
+  </Permission>
+  
+  <Data>
+    <DropDown>
+      <Pergunta>Idade:</Pergunta>
+      <Opcao1>4 ou -</Opcao1>
+      <Opcao2>5 a 10</Opcao2>
+      <Opcao3>10 a 16</Opcao3>
+      <Opcao4>17 ou +</Opcao4>
+    </DropDown>
+    <Toogle>
+      <Pergunta>Foi diagnosticada com autismo?</Pergunta>
+      <Sim>Sim</Sim>
+      <Nao>Não</Nao>
+    </Toogle>
+    <Ok>Ok</Ok>
+    <Voltar>Voltar</Voltar>
+  </Data>
+  
+  <Difficulty>
+    <Pergunta>Dificuldade</Pergunta>
+    <Facil>Fácil</Facil>
+    <Medio>Médio</Medio>
+    <Dificil>Dificíl</Dificil>
+    <Ok>Ok</Ok>
+    <Voltar>Voltar</Voltar>
+  </Difficulty>
+  
+  <Map>
+    <Manha>
+      <Titulo>Manhã</Titulo>
+      <Imagem>Objetos correspondentes</Imagem>
+      <Som>Reconhecimento de sons</Som>
+    </Manha>
+    <Tarde>
+      <Titulo>Tarde</Titulo>
+      <Imagem>Objetos correspondentes</Imagem>
+      <Som>Reconhecimento de sons</Som>
+    </Tarde>
+    <Noite>
+      <Titulo>Noite</Titulo>
+      <Imagem>Objetos correspondentes</Imagem>
+      <Som>Reconhecimento de sons</Som>
+    </Noite>
+    <Voltar>Voltar</Voltar>
+  </Map>
+  
+  <Option>
+    <Titulo>Opções</Titulo>]
+    <Sound>
+      <Pergunta>Som:</Pergunta>
+    </Sound>
+    <Language>
+      <Pergunta>Língua:</Pergunta>
+    </Language>
+    <Difficulty>
+      <Pergunta>Dificuldade:</Pergunta>
+      <Facil>Fácil</Facil>
+      <Medio>Médio</Medio>
+      <Dificil>Dificíl</Dificil>
+    </Difficulty>
+    <Credits>
+      <Pergunta>Créditos:</Pergunta>
+      <Botao>Assistir</Botao>
+    </Credits>
+    <Sair>Sair</Sair>
+  </Option>
+  
+  <Tutorial>
+    
+  </Tutorial>
+  
+  <MinigameBasic>
+    <Score>
+      <Avaliacao>Parabéns!  Acertou xx %</Avaliacao>
+      <Repetir>Repetir</Repetir>
+      <Voltar>Voltar</Voltar>
+    </Score>
+  </MinigameBasic>
+  
+  <Minigame1>
+    
+  </Minigame1>
+  <Minigame2>
+    
+  </Minigame2>
+  <Minigame3>
+    
+  </Minigame3>
+  <Minigame4>
+    
+  </Minigame4>
+  <Minigame5>
+    
+  </Minigame5>
+  <Minigame6>
+    
+  </Minigame6>
+</Portugues>

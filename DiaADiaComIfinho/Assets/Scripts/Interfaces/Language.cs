@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Language : MonoBehaviour {
 
+    [SerializeField]
+    ChangeLanguage CL;
 	// Use this for initialization
 	void Start () {
         //Verificação genérica/ suporte a linguagens não previstas
@@ -22,6 +24,7 @@ public class Language : MonoBehaviour {
             case "Portugues":
                 Debug.Log("Linguagem em PT escolhida");
                 transform.parent.GetComponent<Animator>().Play("MainScreen_Open");
+                CL.SetLanguage();
                 break;
             case "Espanhol":
                 Debug.Log("Linguagem em ES escolhida");

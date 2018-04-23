@@ -24,6 +24,8 @@ public class GamePlayBasic : MonoBehaviour {
     int acertos = 0;
     int erros = 0;
 
+    string scoreDefacult_text;
+
     virtual internal void Start()
     {
 
@@ -118,8 +120,7 @@ public class GamePlayBasic : MonoBehaviour {
 
         StartCoroutine(Score());
 
-        telascore.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = "Parabéns \n acertou " + (int)((acertos/5f)*100) + " %";
-
+        telascore.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = scoreDefacult_text.Replace("xx", ((int)((acertos / 5f) * 100)).ToString());
     }
 
     virtual internal int SortearPergunta(int quantidade)
@@ -183,5 +184,12 @@ public class GamePlayBasic : MonoBehaviour {
 
         telascore.SetActive(false);
         telascore.GetComponent<RectTransform>().localScale = new Vector3(0, 0, 0);
+
+        if (scoreDefacult_text == null)
+        {
+            scoreDefacult_text = telascore.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text;
+        }
+
+        telascore.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = scoreDefacult_text;
     }
 }
