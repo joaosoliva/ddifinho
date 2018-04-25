@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Portugues>
+  <Language>
+    <FrasePrincipal>Choose a language</FrasePrincipal>
+  </Language>
+  
+  <MainScreen>
+    <FrasePrincipal>Press to play</FrasePrincipal>
+  </MainScreen>
+  
+  <Menu>
+    <Continuar>Continue</Continuar>
+    <Novo>New game</Novo>
+    <Opcoes>Options</Opcoes>
+    <Sair>Exit</Sair>
+  </Menu>
+  
+  <Permission>
+    <Pergunta>Allow data to be collected for research?</Pergunta>
+    <Sim>Yes</Sim>
+    <Nao>No</Nao>
+  </Permission>
+  
+  <Data>
+    <DropDown>
+      <Pergunta>Age:</Pergunta>
+      <Opcao1>4 or -</Opcao1>
+      <Opcao2>5 to 10</Opcao2>
+      <Opcao3>10 to 16</Opcao3>
+      <Opcao4>17 or +</Opcao4>
+    </DropDown>
+    <Toogle>
+      <Pergunta>Have been diagnosed with autism?</Pergunta>
+      <Sim>Yes</Sim>
+      <Nao>No</Nao>
+    </Toogle>
+    <Ok>Ok</Ok>
+    <Voltar>Back</Voltar>
+  </Data>
+  
+  <Difficulty>
+    <Pergunta>Dificulty</Pergunta>
+    <Facil>Easy</Facil>
+    <Medio>Medium</Medio>
+    <Dificil>Hard</Dificil>
+    <Ok>Ok</Ok>
+    <Voltar>Back</Voltar>
+  </Difficulty>
+  
+  <Map>
+    <Manha>
+      <Titulo>Morning</Titulo>
+      <Imagem>Matching objects</Imagem>
+      <Som>Sound recognition</Som>
+    </Manha>
+    <Tarde>
+      <Titulo>Afternoon</Titulo>
+      <Imagem>Drag and fill</Imagem>
+      <Som>Emotions</Som>
+    </Tarde>
+    <Noite>
+      <Titulo>Night</Titulo>
+      <Imagem>Color match</Imagem>
+      <Som>Puzzle</Som>
+    </Noite>
+    <Voltar>Back</Voltar>
+  </Map>
+  
+  <Option>
+    <Titulo>Options</Titulo>
+    <Sound>
+      <Pergunta>Sound:</Pergunta>
+    </Sound>
+    <Language>
+      <Pergunta>Language:</Pergunta>
+    </Language>
+    <Difficulty>
+      <Pergunta>Dificulty:</Pergunta>
+      <Facil>Easy</Facil>
+      <Medio>Medium</Medio>
+      <Dificil>Hard</Dificil>
+    </Difficulty>
+    <Credits>
+      <Pergunta>Credits:</Pergunta>
+      <Botao>Watch</Botao>
+    </Credits>
+    <Sair>Exit</Sair>
+  </Option>
+  
+  <Tutorial>
+    
+  </Tutorial>
+  
+  <MinigameBasic>
+    <Score>
+      <Avaliacao>Congratulations  You got xx %</Avaliacao>
+      <Repetir>Replay</Repetir>
+      <Voltar>Back</Voltar>
+    </Score>
+  </MinigameBasic>
+  
+  <Minigame1>
+    
+  </Minigame1>
+  <Minigame2>
+    
+  </Minigame2>
+  <Minigame3>
+    
+  </Minigame3>
+  <Minigame4>
+    
+  </Minigame4>
+  <Minigame5>
+    
+  </Minigame5>
+  <Minigame6>
+    
+  </Minigame6>
+</Portugues>
