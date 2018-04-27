@@ -55,7 +55,8 @@ public class Minigame1 : GamePlayBasic
         {
             case "easy":
                 respostas = SortearResposta(5, respostasPossiveis.Length);
-                pergunta = SortearPergunta(6);
+                //Sorteia o indice da cópia
+                pergunta = SortearPergunta(-1);
 
                 Elementos = new List<int>(respostas);
                 Elementos.Insert(Random.Range(0, respostas.Length), pergunta);
@@ -70,7 +71,7 @@ public class Minigame1 : GamePlayBasic
 
             case "normal":
                 respostas = SortearResposta(7, respostasPossiveis.Length);
-                pergunta = SortearPergunta(8);
+                pergunta = SortearPergunta(-1);
 
                 Elementos = new List<int>(respostas);
                 Elementos.Insert(Random.Range(0, respostas.Length), pergunta);
@@ -86,7 +87,7 @@ public class Minigame1 : GamePlayBasic
 
             case "hard":
                 respostas = SortearResposta(9, respostasPossiveis.Length);
-                pergunta = SortearPergunta(10);
+                pergunta = SortearPergunta(-1);
 
                 Elementos = new List<int>(respostas);
                 Elementos.Insert(Random.Range(0, respostas.Length), pergunta);
@@ -102,7 +103,7 @@ public class Minigame1 : GamePlayBasic
         }
     }
 
-    internal override int SortearPergunta(int quantidade)
+    internal override int SortearPergunta(int RangeMax)
     {
         return respostas[Random.Range(0, respostas.Length)];
     }

@@ -131,7 +131,6 @@ public class Observador : MonoBehaviour {
     static public void AtualizarScore(int valor, int minigame)
     {
         doc.SelectSingleNode("//Usuario[@id='" + Buscar_ID_Atual() + "']/Score_Minigame_" + minigame + "_" + PlayerPrefs.GetString("Dificuldade")).InnerText = valor.ToString();
-        Debug.Log("atualizado");
         SaveData();
     }
 

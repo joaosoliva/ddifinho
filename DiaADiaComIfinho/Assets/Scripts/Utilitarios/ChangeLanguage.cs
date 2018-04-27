@@ -120,19 +120,31 @@ public class ChangeLanguage : MonoBehaviour {
     //TextMeshProUGUI
     //[Space]
 
+    [Header("Minigame1")]
+    [SerializeField]
+    TextMeshProUGUI MiniGame1_Avaliacacao;
+    [SerializeField]
+    TextMeshProUGUI MiniGame1_Repetir;
+    [SerializeField]
+    TextMeshProUGUI MiniGame1_Voltar;
+    [Space]
 
-    [Header("MinigameBasic")]
+    [Header("Minigame2")]
     [SerializeField]
-    TextMeshProUGUI MiniGameBasic_Avaliacacao;
+    TextMeshProUGUI MiniGame2_Avaliacacao;
     [SerializeField]
-    TextMeshProUGUI MiniGameBasic_Repetir;
+    TextMeshProUGUI MiniGame2_Repetir;
     [SerializeField]
-    TextMeshProUGUI MiniGameBasic_Voltar;
-    //[Space]
+    TextMeshProUGUI MiniGame2_Voltar;
+    [Space]
 
-    //[Header("")]
-    //[SerializeField]
-    //TextMeshProUGUI
+    [Header("Minigame3")]
+    [SerializeField]
+    TextMeshProUGUI MiniGame3_Avaliacacao;
+    [SerializeField]
+    TextMeshProUGUI MiniGame3_Repetir;
+    [SerializeField]
+    TextMeshProUGUI MiniGame3_Voltar;
     //[Space]
 
     // Use this for initialization
@@ -206,8 +218,18 @@ public class ChangeLanguage : MonoBehaviour {
 
         //Tutorial
 
-        MiniGameBasic_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
-        MiniGameBasic_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
-        MiniGameBasic_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        MiniGame1_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
+        MiniGame1_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
+        MiniGame1_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+
+
+        MiniGame2_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
+        MiniGame2_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
+        MiniGame2_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+
+
+        MiniGame3_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
+        MiniGame3_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
+        MiniGame3_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
     }
 }

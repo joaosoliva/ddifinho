@@ -29,10 +29,12 @@ public class Language : MonoBehaviour {
             case "Espanhol":
                 Debug.Log("Linguagem em ES escolhida");
                 transform.parent.GetComponent<Animator>().Play("MainScreen_Open");
+                CL.SetLanguage();
                 break;
             case "Ingles":
                 Debug.Log("Linguagem em EN escolhida");
                 transform.parent.GetComponent<Animator>().Play("MainScreen_Open");
+                CL.SetLanguage();
                 break;
             default:
                 transform.parent.GetComponent<Animator>().Play("Linguagem_open");

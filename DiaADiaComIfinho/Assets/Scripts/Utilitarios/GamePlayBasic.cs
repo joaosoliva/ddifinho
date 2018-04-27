@@ -123,9 +123,9 @@ public class GamePlayBasic : MonoBehaviour {
         telascore.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = scoreDefacult_text.Replace("xx", ((int)((acertos / 5f) * 100)).ToString());
     }
 
-    virtual internal int SortearPergunta(int quantidade)
+    virtual internal int SortearPergunta(int RangeMax)
     {
-       return Random.Range(0, quantidade);
+       return Random.Range(0, RangeMax);
     }
 
     internal int[] SortearResposta(int quantidade, int total)
