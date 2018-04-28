@@ -23,6 +23,7 @@ public class Difficulty : MonoBehaviour {
     public void SaveGame()
     {
         PlayerPrefs.SetInt("SaveGame", 1);
+
         Observador.OficializarUsuario();
     }
 }

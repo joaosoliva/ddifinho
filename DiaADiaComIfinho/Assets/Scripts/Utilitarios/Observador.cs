@@ -41,39 +41,43 @@ public class Observador : MonoBehaviour {
         doc.AppendChild(dados);
         SaveData();
     }
-
+    
+    //Possivel bug de permissão pode ser resolvido direto na raiz
     static public void CriarUsuario(string idade_canvas, string autismo_canvas)
     {
-        //Resetamos o doc para a versão oficial para evitar duplicadas de dados
-        doc.Load(filePath);
-
-        XmlElement usuario = doc.CreateElement("Usuario");
-        usuario.SetAttribute("id", Buscar_ID_Livre().ToString());
-
-        XmlElement idade = doc.CreateElement("Idade");
-        idade.InnerText = idade_canvas;
-        XmlElement autismo = doc.CreateElement("Autismo");
-        autismo.InnerText = autismo_canvas;
-
-        usuario.AppendChild(idade);
-        usuario.AppendChild(autismo);
-
-        for (int i = 1; i < Menu.total_minigames + 1; i++)
+        if (PlayerPrefs.GetString("Permite") == "sim")
         {
-            XmlElement score = doc.CreateElement("Score_Minigame_" + i + "_easy");
-            score.InnerText = "0";
-            usuario.AppendChild(score);
+            //Resetamos o doc para a versão oficial para evitar duplicadas de dados
+            doc.Load(filePath);
 
-            score = doc.CreateElement("Score_Minigame_" + i + "_normal");
-            score.InnerText = "0";
-            usuario.AppendChild(score);
+            XmlElement usuario = doc.CreateElement("Usuario");
+            usuario.SetAttribute("id", Buscar_ID_Livre().ToString());
 
-            score = doc.CreateElement("Score_Minigame_" + i + "_hard");
-            score.InnerText = "0";
-            usuario.AppendChild(score);
+            XmlElement idade = doc.CreateElement("Idade");
+            idade.InnerText = idade_canvas;
+            XmlElement autismo = doc.CreateElement("Autismo");
+            autismo.InnerText = autismo_canvas;
+
+            usuario.AppendChild(idade);
+            usuario.AppendChild(autismo);
+
+            for (int i = 1; i < Menu.total_minigames + 1; i++)
+            {
+                XmlElement score = doc.CreateElement("Score_Minigame_" + i + "_easy");
+                score.InnerText = "0";
+                usuario.AppendChild(score);
+
+                score = doc.CreateElement("Score_Minigame_" + i + "_normal");
+                score.InnerText = "0";
+                usuario.AppendChild(score);
+
+                score = doc.CreateElement("Score_Minigame_" + i + "_hard");
+                score.InnerText = "0";
+                usuario.AppendChild(score);
+            }
+
+            doc.SelectSingleNode("Dados").AppendChild(usuario);
         }
-
-        doc.SelectSingleNode("Dados").AppendChild(usuario);
     }
 
     static public void OficializarUsuario()
@@ -130,8 +134,11 @@ public class Observador : MonoBehaviour {
 
     static public void AtualizarScore(int valor, int minigame)
     {
-        doc.SelectSingleNode("//Usuario[@id='" + Buscar_ID_Atual() + "']/Score_Minigame_" + minigame + "_" + PlayerPrefs.GetString("Dificuldade")).InnerText = valor.ToString();
-        SaveData();
+        if (PlayerPrefs.GetString("Permite") == "sim")
+        {
+            doc.SelectSingleNode("//Usuario[@id='" + Buscar_ID_Atual() + "']/Score_Minigame_" + minigame + "_" + PlayerPrefs.GetString("Dificuldade")).InnerText = valor.ToString();
+            SaveData();
+        }
     }
 
     static public void SaveData()

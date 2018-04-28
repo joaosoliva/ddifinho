@@ -13,4 +13,9 @@ public class Permission : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void Permicao(string permite)
+    {
+        PlayerPrefs.SetString("Permite", permite);
+    }
 }

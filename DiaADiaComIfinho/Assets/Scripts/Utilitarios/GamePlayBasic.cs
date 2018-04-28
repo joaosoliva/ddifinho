@@ -110,6 +110,7 @@ public class GamePlayBasic : MonoBehaviour {
             {
                 PlayerPrefs.SetInt("Score_Minigame_" + minigame + "_" + PlayerPrefs.GetString("Dificuldade"), 3);
                 Observador.AtualizarScore(3, minigame);
+
             }
 
             for (int i = 0; i < 3; i++)
