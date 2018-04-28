@@ -145,6 +145,14 @@ public class ChangeLanguage : MonoBehaviour {
     TextMeshProUGUI MiniGame3_Repetir;
     [SerializeField]
     TextMeshProUGUI MiniGame3_Voltar;
+
+    [Header("Minigame4")]
+    [SerializeField]
+    TextMeshProUGUI MiniGame4_Avaliacacao;
+    [SerializeField]
+    TextMeshProUGUI MiniGame4_Repetir;
+    [SerializeField]
+    TextMeshProUGUI MiniGame4_Voltar;
     //[Space]
 
     // Use this for initialization
@@ -231,5 +239,9 @@ public class ChangeLanguage : MonoBehaviour {
         MiniGame3_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
         MiniGame3_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
         MiniGame3_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+
+        MiniGame4_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
+        MiniGame4_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
+        MiniGame4_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
     }
 }

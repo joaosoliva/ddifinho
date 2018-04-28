@@ -110,7 +110,13 @@
     
   </Minigame3>
   <Minigame4>
-    
+    <Feliz>Feliz</Feliz>
+    <Triste>Triste</Triste>
+    <Indiferente>Indiferente</Indiferente>
+    <Assustado>Assustado</Assustado>
+    <Zangado>Zangado</Zangado>
+    <Sorridente>Sorridente</Sorridente>
+    <Surpreso>Surpreso</Surpreso>
   </Minigame4>
   <Minigame5>
     
