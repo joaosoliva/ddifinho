@@ -104,7 +104,7 @@ public class Minigame5 : GamePlayBasic {
         }
     }
 
-    internal new int SortearPergunta(int quantidade, int total)
+    internal int SortearPergunta(int quantidade, int total)
     {
         /* Retorna um array com as respostas sorteadas
          * Primeiro recebemos o total de respostas possíveis de onde sortearemos os indices 
@@ -229,8 +229,6 @@ public class Minigame5 : GamePlayBasic {
     {
         if (selecionados.Length == 2)
         {
-            Debug.Log(slots[selecionados[0]].transform.GetChild(0).GetComponent<Image>().color.ToString() + "  " + coresPossiveis[pergunta]);
-
             if (slots[selecionados[0]].transform.GetChild(0).GetComponent<Image>().color == coresPossiveis[pergunta] &&
                 slots[selecionados[1]].transform.GetChild(0).GetComponent<Image>().color == coresPossiveis[pergunta])
             {
