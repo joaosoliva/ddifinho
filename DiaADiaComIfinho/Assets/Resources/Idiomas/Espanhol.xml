@@ -110,10 +110,21 @@
     
   </Minigame3>
   <Minigame4>
-    
+    <Feliz>Feliz</Feliz>
+    <Triste>Triste</Triste>
+    <Indiferente>Indiferente</Indiferente>
+    <Assustado>Asustado</Assustado>
+    <Zangado>Enojado</Zangado>
+    <Sorridente>Sonriente</Sorridente>
+    <Surpreso>Sorprendido</Surpreso>
   </Minigame4>
   <Minigame5>
-    
+    <Azul>Azul</Azul>
+    <Amarelo>Amarillo</Amarelo>
+    <Vermelho>Rojo</Vermelho>
+    <Verde>Verde</Verde>
+    <Laranja>Naranja</Laranja>
+    <Violeta>Violeta</Violeta>
   </Minigame5>
   <Minigame6>
     

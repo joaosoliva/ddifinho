@@ -56,13 +56,13 @@
     </Manha>
     <Tarde>
       <Titulo>Tarde</Titulo>
-      <Imagem>Objetos correspondentes</Imagem>
-      <Som>Reconhecimento de sons</Som>
+      <Imagem>Arraste e solte</Imagem>
+      <Som>Emoções</Som>
     </Tarde>
     <Noite>
       <Titulo>Noite</Titulo>
-      <Imagem>Objetos correspondentes</Imagem>
-      <Som>Reconhecimento de sons</Som>
+      <Imagem>Cores correspondentes</Imagem>
+      <Som>Quebra-cabeça</Som>
     </Noite>
     <Voltar>Voltar</Voltar>
   </Map>
