@@ -24,6 +24,9 @@ public class Minigame2 : GamePlayBasic {
     // Use this for initialization
     override internal void Start()
     {
+
+        Tutorial(2);
+
         #region Carregar audios de acordo com a lingua
         perguntasPossiveis[0] = Resources.Load<AudioClip>("Minigames/2/" + PlayerPrefs.GetString("Lingua") + "/Book");
         perguntasPossiveis[1] = Resources.Load<AudioClip>("Minigames/2/" + PlayerPrefs.GetString("Lingua") + "/Car");

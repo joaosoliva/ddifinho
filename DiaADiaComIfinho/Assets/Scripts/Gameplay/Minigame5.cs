@@ -29,11 +29,7 @@ public class Minigame5 : GamePlayBasic {
     // Use this for initialization
     override internal void Start()
     {
-
-        //for (int i = 0; i < transform.GetChild(1).childCount; i++)
-        //{
-        //    slots[i] = transform.GetChild(1).GetChild(i).gameObject;
-        //}
+        Tutorial(5);
 
         Inicializar();
 

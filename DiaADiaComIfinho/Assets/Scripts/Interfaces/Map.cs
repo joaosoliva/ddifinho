@@ -133,15 +133,6 @@ public class Map : MonoBehaviour {
             //tarde
             ColorUtility.TryParseHtmlString("#9BD0F3FF", out targetBackground);
 
-            //if (ColorUtility.TryParseHtmlString("#9BD0F3FF", out targetBackground))
-            //{
-                //Debug.Log("funciono");
-            //}
-        
-            //else {
-                //Debug.Log("deu ruim");
-            //}
-
         }
         else if (targetValue == 1)
         {

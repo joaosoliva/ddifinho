@@ -20,7 +20,10 @@ public class ObjectDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, I
         parent = transform.parent;
         originalPosition = transform.position;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
-        minigame3.Selecionar(id);
+        if (minigame3 != null)
+        {
+            minigame3.Selecionar(id);
+        }
     }
 
     void IDragHandler.OnDrag(PointerEventData eventData)

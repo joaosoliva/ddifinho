@@ -133,6 +133,12 @@ public class ChangeLanguage : MonoBehaviour {
     TextMeshProUGUI MiniGame1_Repetir;
     [SerializeField]
     TextMeshProUGUI MiniGame1_Voltar;
+    [SerializeField]
+    TextMeshProUGUI MiniGame1_Tutorial_FrasePrincipal;
+    [SerializeField]
+    TextMeshProUGUI MiniGame1_Tutorial_Sim;
+    [SerializeField]
+    TextMeshProUGUI MiniGame1_Tutorial_Nao;
     [Space]
 
     [Header("Minigame2")]
@@ -142,6 +148,12 @@ public class ChangeLanguage : MonoBehaviour {
     TextMeshProUGUI MiniGame2_Repetir;
     [SerializeField]
     TextMeshProUGUI MiniGame2_Voltar;
+    [SerializeField]
+    TextMeshProUGUI MiniGame2_Tutorial_FrasePrincipal;
+    [SerializeField]
+    TextMeshProUGUI MiniGame2_Tutorial_Sim;
+    [SerializeField]
+    TextMeshProUGUI MiniGame2_Tutorial_Nao;
     [Space]
 
     [Header("Minigame3")]
@@ -151,6 +163,12 @@ public class ChangeLanguage : MonoBehaviour {
     TextMeshProUGUI MiniGame3_Repetir;
     [SerializeField]
     TextMeshProUGUI MiniGame3_Voltar;
+    [SerializeField]
+    TextMeshProUGUI MiniGame3_Tutorial_FrasePrincipal;
+    [SerializeField]
+    TextMeshProUGUI MiniGame3_Tutorial_Sim;
+    [SerializeField]
+    TextMeshProUGUI MiniGame3_Tutorial_Nao;
 
     [Header("Minigame4")]
     [SerializeField]
@@ -159,6 +177,27 @@ public class ChangeLanguage : MonoBehaviour {
     TextMeshProUGUI MiniGame4_Repetir;
     [SerializeField]
     TextMeshProUGUI MiniGame4_Voltar;
+    [SerializeField]
+    TextMeshProUGUI MiniGame4_Tutorial_FrasePrincipal;
+    [SerializeField]
+    TextMeshProUGUI MiniGame4_Tutorial_Sim;
+    [SerializeField]
+    TextMeshProUGUI MiniGame4_Tutorial_Nao;
+    [Space]
+
+    [Header("Minigame5")]
+    [SerializeField]
+    TextMeshProUGUI MiniGame5_Avaliacacao;
+    [SerializeField]
+    TextMeshProUGUI MiniGame5_Repetir;
+    [SerializeField]
+    TextMeshProUGUI MiniGame5_Voltar;
+    [SerializeField]
+    TextMeshProUGUI MiniGame5_Tutorial_FrasePrincipal;
+    [SerializeField]
+    TextMeshProUGUI MiniGame5_Tutorial_Sim;
+    [SerializeField]
+    TextMeshProUGUI MiniGame5_Tutorial_Nao;
     //[Space]
 
     // Use this for initialization
@@ -239,19 +278,45 @@ public class ChangeLanguage : MonoBehaviour {
         MiniGame1_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
         MiniGame1_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
         MiniGame1_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        MiniGame1_Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/FrasePrincipal").InnerText;
+        MiniGame1_Tutorial_Sim.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Sim").InnerText;
+        MiniGame1_Tutorial_Nao.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Nao").InnerText;
 
 
         MiniGame2_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
         MiniGame2_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
         MiniGame2_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        MiniGame2_Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/FrasePrincipal").InnerText;
+        MiniGame2_Tutorial_Sim.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Sim").InnerText;
+        MiniGame2_Tutorial_Nao.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Nao").InnerText;
 
 
         MiniGame3_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
         MiniGame3_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
         MiniGame3_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        MiniGame3_Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/FrasePrincipal").InnerText;
+        MiniGame3_Tutorial_Sim.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Sim").InnerText;
+        MiniGame3_Tutorial_Nao.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Nao").InnerText;
 
         MiniGame4_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
         MiniGame4_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
         MiniGame4_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        MiniGame4_Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/FrasePrincipal").InnerText;
+        MiniGame4_Tutorial_Sim.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Sim").InnerText;
+        MiniGame4_Tutorial_Nao.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Nao").InnerText;
+
+        MiniGame5_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
+        MiniGame5_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
+        MiniGame5_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        MiniGame5_Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/FrasePrincipal").InnerText;
+        MiniGame5_Tutorial_Sim.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Sim").InnerText;
+        MiniGame5_Tutorial_Nao.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Nao").InnerText;
+
+        //MiniGame6_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
+        //MiniGame6_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;
+        //MiniGame6_Voltar.text = doc.SelectSingleNode("//MinigameBasic/Score/Voltar").InnerText;
+        //MiniGame6_Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/FrasePrincipal").InnerText;
+        //MiniGame6_Tutorial_Sim.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Sim").InnerText;
+        //MiniGame6_Tutorial_Nao.text = doc.SelectSingleNode("//MinigameBasic/Tutorial/Nao").InnerText;
     }
 }

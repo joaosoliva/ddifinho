@@ -37,14 +37,9 @@ public class Minigame4 : GamePlayBasic{
     // Use this for initialization
     override internal void Start()
     {
-
-        //for (int i = 0; i < transform.GetChild(1).childCount; i++)
-        //{
-        //    slots[i] = transform.GetChild(1).GetChild(i).gameObject;
-        //}
-
+        Tutorial(4);
+ 
         Inicializar();
-
     }
 
     // Update is called once per frame

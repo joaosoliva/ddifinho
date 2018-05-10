@@ -95,10 +95,10 @@
     <Continuar>Continuar</Continuar>
     <Voltar>Voltar</Voltar>
     <MG1>Clique nos objetos iguais</MG1>
-    <MG2></MG2>
-    <MG3></MG3>
-    <MG4></MG4>
-    <MG5></MG5>
+    <MG2>Ouça o áudio e clique no objeto correto</MG2>
+    <MG3>Arraste o objeto correto até a silueta</MG3>
+    <MG4>Clique na expressão facial correta</MG4>
+    <MG5>Clique no objeto de cor correta</MG5>
     <MG6></MG6>
   </Tutorial>
   
@@ -108,6 +108,11 @@
       <Repetir>Repetir</Repetir>
       <Voltar>Voltar</Voltar>
     </Score>
+    <Tutorial>
+        <FrasePrincipal>Deseja fazer o tutorial?</FrasePrincipal>
+        <Sim>Sim</Sim>
+        <Nao>Não</Nao>
+    </Tutorial>
   </MinigameBasic>
   
   <Minigame1>

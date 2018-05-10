@@ -18,6 +18,11 @@ public class GamePlayBasic : MonoBehaviour {
     Sprite star;
     [SerializeField]
     Sprite starEmpty;
+    [Space]
+    [SerializeField]
+    internal TutorialBasic tutorialBasic;
+    [SerializeField]
+    internal GameObject tutorialQuestion;
 
     int rodada = 0;
 
@@ -25,6 +30,8 @@ public class GamePlayBasic : MonoBehaviour {
     int erros = 0;
 
     string scoreDefacult_text;
+
+    int tutorialMinigame;
 
     virtual internal void Start()
     {
@@ -34,6 +41,27 @@ public class GamePlayBasic : MonoBehaviour {
     virtual internal void Update()
     {
 
+    }
+
+    internal void Tutorial(int mg)
+    {
+        tutorialMinigame = mg;
+        if (PlayerPrefs.GetInt("Tutorial_" + tutorialMinigame) == 0)
+        {
+            tutorialQuestion.SetActive(true);
+        }
+    }
+
+    public void IniciarTutorial()
+    {
+        tutorialBasic.AbrirTutorial();
+        tutorialBasic.IniciarTutorial(tutorialMinigame);
+        tutorialQuestion.SetActive(false);
+    }
+    public void NaoFazerTutorial()
+    {
+        PlayerPrefs.SetInt("Tutorial_"+ tutorialMinigame, 1);
+        tutorialQuestion.SetActive(false);
     }
 
     virtual internal void Inicializar()

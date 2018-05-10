@@ -9,12 +9,22 @@ public class ObjectDropHandler : MonoBehaviour, IDropHandler {
     [SerializeField]
     Minigame3 minigame3;
 
+    [SerializeField]
+    TutorialBasic tutorialBasic;
+
     void IDropHandler.OnDrop(PointerEventData eventData)
     {
         Vector3 inPosition;
         if (RectTransformUtility.ScreenPointToWorldPointInRectangle(transform.GetComponent<RectTransform>(),eventData.position,eventData.pressEventCamera,out inPosition))
         {
-            minigame3.ConfirmarSelecao();
+            if (minigame3 != null)
+            {
+                minigame3.ConfirmarSelecao();
+            }
+            else
+            {
+                tutorialBasic.Selecionar(0);
+            }
         }
     }
 }

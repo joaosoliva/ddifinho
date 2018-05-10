@@ -26,7 +26,7 @@ public class Minigame3 : GamePlayBasic{
     // Use this for initialization
     override internal void Start()
     {
-
+        Tutorial(3);
         Inicializar();
 
     }

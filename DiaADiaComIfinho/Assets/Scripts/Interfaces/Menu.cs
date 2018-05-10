@@ -47,12 +47,13 @@ public class Menu : MonoBehaviour {
             PlayerPrefs.DeleteKey("Score_Minigame_" + i + "_easy");
             PlayerPrefs.DeleteKey("Score_Minigame_" + i + "_normal");
             PlayerPrefs.DeleteKey("Score_Minigame_" + i + "_hard");
+
+            PlayerPrefs.SetInt("Tutorial_" + i, 0);
         }
 
         PlayerPrefs.DeleteKey("Dificuldade");
         PlayerPrefs.SetInt("SaveGame", 0);
         PlayerPrefs.SetString("Permite", "sim");
-        //Resetar tutorial
     }
 
     void Option()
