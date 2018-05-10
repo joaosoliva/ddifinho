@@ -52,6 +52,7 @@ public class Menu : MonoBehaviour {
         PlayerPrefs.DeleteKey("Dificuldade");
         PlayerPrefs.SetInt("SaveGame", 0);
         PlayerPrefs.SetString("Permite", "sim");
+        //Resetar tutorial
     }
 
     void Option()

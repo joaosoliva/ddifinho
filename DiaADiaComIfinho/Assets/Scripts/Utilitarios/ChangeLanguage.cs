@@ -115,10 +115,16 @@ public class ChangeLanguage : MonoBehaviour {
     TextMeshProUGUI Option_Sair;
     [Space]
 
-    //[Header("Tutorial")]
-    //[SerializeField]
-    //TextMeshProUGUI
-    //[Space]
+    [Header("Tutorial")]
+    [SerializeField]
+    TextMeshProUGUI Tutorial_FrasePrincipal;
+    [SerializeField]
+    TextMeshProUGUI Tutorial_Repetir;
+    [SerializeField]
+    TextMeshProUGUI Tutorial_Continuar;
+    [SerializeField]
+    TextMeshProUGUI Tutorial_Voltar;
+    [Space]
 
     [Header("Minigame1")]
     [SerializeField]
@@ -224,7 +230,11 @@ public class ChangeLanguage : MonoBehaviour {
         Option_Credits_Botao.text = doc.SelectSingleNode("//Option/Credits/Botao").InnerText;
         Option_Sair.text = doc.SelectSingleNode("//Option/Sair").InnerText;
 
-        //Tutorial
+
+        Tutorial_FrasePrincipal.text = doc.SelectSingleNode("//Tutorial/FrasePrincipal").InnerText;
+        Tutorial_Repetir.text = doc.SelectSingleNode("//Tutorial/Repetir").InnerText;
+        Tutorial_Continuar.text = doc.SelectSingleNode("//Tutorial/Continuar").InnerText;
+        Tutorial_Voltar.text = doc.SelectSingleNode("//Tutorial/Voltar").InnerText;
 
         MiniGame1_Avaliacacao.text = doc.SelectSingleNode("//MinigameBasic/Score/Avaliacao").InnerText;
         MiniGame1_Repetir.text = doc.SelectSingleNode("//MinigameBasic/Score/Repetir").InnerText;

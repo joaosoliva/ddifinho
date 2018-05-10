@@ -89,7 +89,17 @@
   </Option>
   
   <Tutorial>
-    
+    <FrasePrincipal>Muito Bem!
+    O tutorial Terminou.</FrasePrincipal>
+    <Repetir>Repetir</Repetir>
+    <Continuar>Continuar</Continuar>
+    <Voltar>Voltar</Voltar>
+    <MG1>Clique nos objetos iguais</MG1>
+    <MG2></MG2>
+    <MG3></MG3>
+    <MG4></MG4>
+    <MG5></MG5>
+    <MG6></MG6>
   </Tutorial>
   
   <MinigameBasic>
